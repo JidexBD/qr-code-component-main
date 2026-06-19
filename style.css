@@ -1,0 +1,137 @@
+:root {
+  /* color */
+  --wh: hsl(0, 0%, 100%);
+  --cl1: hsl(212, 45%, 89%);
+  --cl2: hsl(216, 15%, 48%);
+  --cl3: hsl(218, 44%, 22%);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Outfit", sans-serif;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+.container {
+  height: 100vh;
+  background-color: var(--cl1);
+  padding: 6rem 4rem;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  background-color: var(--wh);
+  margin: 5rem auto;
+  padding: 3rem 2rem;
+  border-radius: 12px;
+  box-shadow: 0 2rem 3rem 0rem rgba(0, 0, 0, 0.2);
+}
+
+.card img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.qr-textbox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.qr-textbox h2 {
+  font-size: 2rem;
+  text-align: center;
+  color: var(--cl3);
+}
+
+.qr-textbox p {
+  font-size: 1.5rem;
+  text-align: center;
+  color: var(--cl2);
+}
+
+/* tab */
+
+@media (min-width: 46.5em) {
+  .container {
+    padding: 6rem 18rem;
+    margin: 0 0;
+  }
+  .card {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    background-color: var(--wh);
+    margin: 20rem 6rem;
+    padding: 3rem 2rem;
+    border-radius: 12px;
+    box-shadow: 0 2rem 3rem 0rem rgba(0, 0, 0, 0.2);
+  }
+}
+
+@media (min-width: 75em) {
+  .container {
+    padding: 6rem 18rem;
+    margin: 0 0;
+  }
+  .card {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    background-color: var(--wh);
+    margin: 10rem 28rem;
+    padding: 3rem 2rem;
+    border-radius: 12px;
+    box-shadow: 0 2rem 3rem 0rem rgba(0, 0, 0, 0.2);
+  }
+}
+
+@media (min-width: 90em) {
+  .container {
+    padding: 6rem 18rem;
+    margin: 0 0;
+  }
+  .card {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    background-color: var(--wh);
+    margin: 10rem 36rem;
+    padding: 3rem 2rem;
+    border-radius: 12px;
+    box-shadow: 0 2rem 3rem 0rem rgba(0, 0, 0, 0.2);
+  }
+}
+
+@media (min-width: 111em) {
+  .container {
+    padding: 6rem 18rem;
+    margin: 0 0;
+  }
+  .card {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    background-color: var(--wh);
+    margin: 10rem 60rem;
+    padding: 3rem 2rem;
+    border-radius: 12px;
+    box-shadow: 0 2rem 3rem 0rem rgba(0, 0, 0, 0.2);
+  }
+}
